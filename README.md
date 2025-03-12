@@ -99,20 +99,28 @@ Once open ports are found, they will be listed in numerical order. Once all port
 <h3 align="center">Results of a Custom Scan:</h3>
 <p align="center">
 <img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/rb1.PNG?raw=true" height="40%" width="40%"/> <br />
-
+This time I will cover a "Custom" scan by typing "2."
 <br />
 <br />
 <img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/rb2.PNG?raw=true" height="60%" width="60%"/> <br />
+Now that I am running the scan as "custom," We gain the freedom to customize the settings that control the way the scan behaves. The first choice offered by the program is if I would like to specify a port range. If I type "n," the default port range will be used. I type "y," which allowsme to specify a start and and end to my port range.<br />
 <br />
 <br />
 <img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/rb3.PNG?raw=true" height="60%" width="60%"/> <br />
+Here I choose the port range to start at port 5,000 and end at port 50,000.<br />
 <br />
 <br />
 <img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/rb4.PNG?raw=true" height="100%" width="100%"/> <br />
+The next prompt asks the user to enter a timeout. For this scan, since I am scannning a local host on my network, I choose to do the fastes timeout available to save time: 0.1.<br />
 <br />
 <br />
 <img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/rb5.PNG?raw=true" height="100%" width="100%"/> <br />
+I am now given the option to choose the max thread count. Once again I choose a value to save time: 2000. This is the highest thread count available, and also the most cpu intensive.<br /> 
 <br />
 <br />
 <img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/rb6.PNG?raw=true" height="60%" width="60%"/> <br />
+
+<br />
+<br />
+This concludes the steps I took to complete my PowerShell Incident Response Script.<br />
 </p>
