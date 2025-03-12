@@ -20,6 +20,7 @@ This Python script is a multithreaded port scanner that allows users to scan a t
 - <b>Resource Management</b>
 - <b>Basic User Interface Design</b>
 - <b>Code Optimization</b>
+- <b>Vulnerability Assessment</b>
 
 <h2>Project Walk-Through:</h2>
 
