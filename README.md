@@ -78,18 +78,41 @@ Lines 105-127:<br />
 <br />
 <h3 align="center">Results of a Default Scan:</h3>
 <p align="center">
-<img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/ra1.PNG?raw=true" height="60%" width="60%"/> <br />
-<img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/ra2.PNG?raw=true" height="60%" width="60%"/> <br />
+<img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/ra1.PNG?raw=true" height="40%" width="40%"/> <br />
+Whenever the script first starts, the user is prompted to select a "Default" or "Custom" scan by typing the number 1 or 2. To select run a default scan, the number 1 is typed.<br />
+<br />
+<br />
+<img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/ra2.PNG?raw=true" height="40%" width="40%"/> <br />
+The next entry is the Target IP the port scanner will connect to.<br /> 
+<br />
+<br />
 <img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/ra3.PNG?raw=true" height="60%" width="60%"/> <br />
+Once the Target IP has been entered, the scan will start and the port scanner settings will be listed. Since this is a default scan, all of the settings are preconfigured to the defaults settings that were stored in the global variables "DEFAULT_MAX_THREADS," "DEFAULT_TIMEOUT," AND "DEFAULT_PORT_RANGE."<br />
+<br />
+<br />
 <img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/ra4.PNG?raw=true" height="60%" width="60%"/> <br />
+Once open ports are found, they will be listed in numerical order. Once all ports have been scanned, the program will let the user know the scan has been complete and the program will terminate.<br />
+<br />
+<br />
 <br />
 <br />
 <h3 align="center">Results of a Custom Scan:</h3>
 <p align="center">
-<img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/rb1.PNG?raw=true" height="60%" width="60%"/> <br />
+<img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/rb1.PNG?raw=true" height="40%" width="40%"/> <br />
+
+<br />
+<br />
 <img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/rb2.PNG?raw=true" height="60%" width="60%"/> <br />
+<br />
+<br />
 <img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/rb3.PNG?raw=true" height="60%" width="60%"/> <br />
-<img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/rb4.PNG?raw=true" height="60%" width="60%"/> <br />
-<img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/rb5.PNG?raw=true" height="60%" width="60%"/> <br />
+<br />
+<br />
+<img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/rb4.PNG?raw=true" height="100%" width="100%"/> <br />
+<br />
+<br />
+<img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/rb5.PNG?raw=true" height="100%" width="100%"/> <br />
+<br />
+<br />
 <img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/rb6.PNG?raw=true" height="60%" width="60%"/> <br />
 </p>
