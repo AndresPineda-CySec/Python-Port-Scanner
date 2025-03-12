@@ -2,18 +2,26 @@
 
 <h2>Description</h2>
 
-<br />
-
+This Python script is a multithreaded port scanner that allows users to scan a target IP address for open ports. It provides two scan options: a default scan with predefined settings or a custom scan where users can specify port ranges, timeout durations, and the maximum number of threads. Once the scan is complete, it displays a summary of the open ports and confirms its completion.<br />
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>PyCharm Community Edition (Python IDE)</b> 
+- <b>Python</b> 
+- <b>PyCharm Community Edition</b> 
 
-<h2>Environments Used </h2>
+<h2>Environments Used</h2>
 
 - <b>Windows 10</b>
 
-<h2>Code walk-through:</h2>
+<h2>Skills Demonstrated</h2>
+
+- <b>Python Programming</b>
+- <b>Network Fundamentls</b>
+- <b>Resource Management</b>
+- <b>Basic User Interface Design</b>
+- <b>Code Optimization</b>
+
+<h2>Project Walk-Through:</h2>
 
 <p align="center">
 <br />
@@ -57,7 +65,7 @@ This block of code is the rest of the if-statement. If the user selects not to u
 <br />
 Lines 67-80:<br />
 <img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/L67.PNG?raw=true" height="100%" width="100%"/> <br />
-This code block sets the "timeout" duration, specifying how long the program will attempt to connect to a port before terminating the attempt. The user can select a timeout value between 0.1 and 2 seconds. Additionally, lines 73 through 80 are dedicated to error handling and input validation, ensuring reliable operation.
+This code block sets the "timeout" duration, specifying how long the program will attempt to connect to a port before terminating the attempt. The user can select a timeout value between 0.1 and 2 seconds. Lines 73 through 80 are also dedicated to error handling and input validation, ensuring reliable operation.
 <br />
 <br />
 Lines 82-95:<br />
@@ -67,19 +75,18 @@ This block is essentially written the same as the previous one but determines th
 <br />
 Lines 97-102:<br />
 <img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/L97.PNG?raw=true" height="60%" width="60%"/> <br />
-This code block handles user input validation and exits the program if the input is invalid. Line 100 asks for input from the user to determine the target IP that the port scanner will scan and line 102 limits the number of concurrent threads to the variable "max_threads," preventing excessive resource usage.
+This code block handles user input validation and exits the program if the input is invalid. Line 100 asks for input from the user to determine the target IP that the port scanner will scan, and line 102 limits the number of concurrent threads to the variable "max_threads," preventing excessive resource usage.
 <br />
 <br />
-<h3 align="center">Executing the Port Scan:</h3>
-<p align="center">
 Lines 105-127:<br />
 <img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/L105.PNG?raw=true" height="100%" width="100%"/> <br />
+Lines 105 through 111 contain print statements that summarize the settings used for the scan, providing the user with an overview of the configured parameters. On line 113, an empty list named "threads" is initialized, which will store the thread objects created in the subsequent lines. Lines 115 through 118 contain a for loop that iterates over a range of ports defined by the custom "port_range" specified earlier. A new thread is created and configured during each iteration to execute the scan_port function, passing the arguments "target," "port," and "timeout." Each thread is started immediately and appended to the threads list. Once all threads are launched, the code ensures their completion by calling join() on each thread in the threads list, as seen in the for loop on lines 120 and 121. Lines 123 and 124 notify the user that the scan has finished. The final two lines outside the main function use the "if __name__ == "__main__":" construct to ensure the main function is executed only when the script is run directly, which then initiates the program.<br />
 <br />
 <br />
 <h3 align="center">Results of a Default Scan:</h3>
 <p align="center">
 <img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/ra1.PNG?raw=true" height="40%" width="40%"/> <br />
-Whenever the script first starts, the user is prompted to select a "Default" or "Custom" scan by typing the number 1 or 2. To select run a default scan, the number 1 is typed.<br />
+When the script starts, the user is prompted to select a "Default" or "Custom" scan by typing 1 or 2. To select run a default scan, the number 1 is typed.<br />
 <br />
 <br />
 <img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/ra2.PNG?raw=true" height="40%" width="40%"/> <br />
@@ -87,11 +94,11 @@ The next entry is the Target IP the port scanner will connect to.<br />
 <br />
 <br />
 <img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/ra3.PNG?raw=true" height="60%" width="60%"/> <br />
-Once the Target IP has been entered, the scan will start and the port scanner settings will be listed. Since this is a default scan, all of the settings are preconfigured to the defaults settings that were stored in the global variables "DEFAULT_MAX_THREADS," "DEFAULT_TIMEOUT," AND "DEFAULT_PORT_RANGE."<br />
+Once the Target IP has been entered, the scan will start, and the port scanner settings will be listed. Since this is a default scan, all of the settings are preconfigured to the default settings that were stored in the global variables "DEFAULT_MAX_THREADS," "DEFAULT_TIMEOUT," AND "DEFAULT_PORT_RANGE."<br />
 <br />
 <br />
 <img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/ra4.PNG?raw=true" height="60%" width="60%"/> <br />
-Once open ports are found, they will be listed in numerical order. Once all ports have been scanned, the program will let the user know the scan has been complete and the program will terminate.<br />
+Once open ports are found, they will be listed in numerical order. Once all ports have been scanned, the program will let the user know the scan has been completed, and the program will terminate.<br />
 <br />
 <br />
 <br />
@@ -99,28 +106,30 @@ Once open ports are found, they will be listed in numerical order. Once all port
 <h3 align="center">Results of a Custom Scan:</h3>
 <p align="center">
 <img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/rb1.PNG?raw=true" height="40%" width="40%"/> <br />
-This time I will cover a "Custom" scan by typing "2."
+I will cover a "Custom" scan this time by typing "2."
 <br />
 <br />
 <img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/rb2.PNG?raw=true" height="60%" width="60%"/> <br />
-Now that I am running the scan as "custom," We gain the freedom to customize the settings that control the way the scan behaves. The first choice offered by the program is if I would like to specify a port range. If I type "n," the default port range will be used. I type "y," which allowsme to specify a start and and end to my port range.<br />
+Now that I am running the scan as "custom," I can customize the settings that control how the scan behaves. The first choice offered by the program is if I would like to specify a port range. If I type "n," the default port range will be used. I type "y," which allows me to specify a start and an end to my port range.<br />
 <br />
 <br />
 <img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/rb3.PNG?raw=true" height="60%" width="60%"/> <br />
-Here I choose the port range to start at port 5,000 and end at port 50,000.<br />
+Here, I choose the port range to start at port 5,000 and end at port 50,000.<br />
 <br />
 <br />
 <img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/rb4.PNG?raw=true" height="100%" width="100%"/> <br />
-The next prompt asks the user to enter a timeout. For this scan, since I am scannning a local host on my network, I choose to do the fastes timeout available to save time: 0.1.<br />
+The next prompt asks the user to enter a timeout. For this scan, since I am scanning a local host on my network, I choose to do the fastest timeout available to save time: 0.1.<br />
 <br />
 <br />
 <img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/rb5.PNG?raw=true" height="100%" width="100%"/> <br />
-I am now given the option to choose the max thread count. Once again I choose a value to save time: 2000. This is the highest thread count available, and also the most cpu intensive.<br /> 
+I am now given the option to choose the maximum thread count. Once again, I choose a value to save time: 2000. This is the highest thread count available, allowing 2000 ports to be scanned at once, and also the most CPU intensive.<br /> 
 <br />
 <br />
-<img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/rb6.PNG?raw=true" height="60%" width="60%"/> <br />
-
+<img src="https://github.com/AndresPineda-CySec/Python-Port-Scanner/blob/main/images/rb66.PNG?raw=true" height="60%" width="60%"/> <br />
+The next step is to provide the target IP and start the scan. Like the default scan, it lists all the settings configured during the program. This scan only yields two open ports this time due to the port range given. The scan is now complete.
 <br />
 <br />
+<br />
+<br /> 
 This concludes the steps I took to complete my PowerShell Incident Response Script.<br />
 </p>
