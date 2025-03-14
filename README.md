@@ -2,7 +2,7 @@
 
 <h2>Description</h2>
 
-This Python script is a multithreaded port scanner that allows users to scan a target IP address for open ports. It provides two scan options: a default scan with predefined settings or a custom scan where users can specify port ranges, timeout durations, and the maximum number of threads. Once the scan is complete, it displays a summary of the open ports and confirms its completion.<br />
+This Python script is a multithreaded port scanner that allows users to scan a target IP address for open ports. It provides two scan options: a default scan with predefined settings or a custom scan where users can specify port ranges, timeout durations, and the maximum number of threads.<br />
 
 <h2>Languages and Utilities Used</h2>
 
