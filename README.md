@@ -16,7 +16,7 @@ This Python script is a multithreaded port scanner that allows users to scan a t
 <h2>Skills Demonstrated</h2>
 
 - <b>Python Programming</b>
-- <b>Network Fundamentls</b>
+- <b>Network Fundamentals</b>
 - <b>Resource Management</b>
 - <b>Basic User Interface Design</b>
 - <b>Code Optimization</b>
